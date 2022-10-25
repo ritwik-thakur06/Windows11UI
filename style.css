@@ -3,7 +3,7 @@
     margin: 0;
 }
 html, body{
-    /*comment the below to lines to use the video.webm file*/
+    /*comment the below two lines and uncomment the video.webm file in html to use it*/
     background-image: url('img/bg.jpeg');
     background-size: cover;
 
@@ -15,7 +15,7 @@ html, body{
     position: absolute;
     bottom: 0;
 
-    /*for centering a div if width isn't 100% then first make width 100%*/
+    /*for centering a div*/
     width: 100%;
     display: flex;
     justify-content: center;  
@@ -25,12 +25,11 @@ html, body{
 }
 
 .right{
-    /*doing so to make img positioned to right side*/
+    /*positioned img to right side*/
     justify-self: flex-end;
     position: absolute;
     right: 0;
     margin: 2px 0;
-    /* height: 85%; */  /*now this doesn't matter*/
 }
 
 .left{
