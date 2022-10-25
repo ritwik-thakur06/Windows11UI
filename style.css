@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    /*comment the below to lines to use the video.webm file*/
+    background-image: url('img/bg.jpeg');
+    background-size: cover;
+
+    height: 100vh;
+    overflow: hidden;
+}
+.taskbar{
+    background-color: #f3f3f3;
+    position: absolute;
+    bottom: 0;
+
+    /*for centering a div if width isn't 100% then first make width 100%*/
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+
+    z-index: 110; /*done this because the video is above taskbar element and so the eventlistener also not working for that reason we set the z-index value */
+    height: 46px;
+}
+
+.right{
+    /*doing so to make img positioned to right side*/
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 2px 0;
+    /* height: 85%; */  /*now this doesn't matter*/
+}
+
+.left{
+    justify-self: flex-start;
+    position: absolute;
+    left: 0;
+    margin: 1px;
+}
+
+.myvideo{
+    display: flex;
+    justify-content: center;
+}
+.startmenu{
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -860px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.22s ease-in;
+}
+.startmenu img{
+    border-radius: 8px;
+    width: 630px;
+    height: 653px;
+}
+.icons{
+    margin: 5px 0;
+    cursor: pointer;
+}
+.icons .text{
+    color: white;
+    width: 34px;
+    margin: 0px 12px;    
+}
+.icons img{
+    width: 74px;
+}
+.icons a{
+    text-decoration: none;
+}
+.icons a .img2{
+    width: 45px;
+    margin: 0px 12px;
+}
