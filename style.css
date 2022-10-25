@@ -20,7 +20,7 @@ html, body{
     display: flex;
     justify-content: center;  
 
-    z-index: 110; /*done this because the video is above taskbar element and so the eventlistener also not working for that reason we set the z-index value */
+    z-index: 110; 
     height: 46px;
 }
 
